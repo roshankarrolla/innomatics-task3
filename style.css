@@ -1,0 +1,268 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* For fixed navbar */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+.feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex-basis: calc(33.33% - 40px); /* 3 features per row on larger screens */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .feature {
+        flex-basis: calc(50% - 40px); /* 2 features per row for tablet screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feature {
+        flex-basis: 100%; /* 1 feature per row for mobile screens */
+    }
+}
+.sign-up-form {
+    display: flex; /* Enable flexbox for side-by-side layout */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Adjusted width for side-by-side layout */
+    width: 100%;
+    margin-inline-end: 2rem;
+}
+
+
+.signup img {
+    max-width: 300px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and form */
+    margin-top: 7rem;
+}
+
+
+.signup-content {
+    flex: 1; /* Allow the form to take remaining space */
+}
+
+
+.sign-up-form h2 {
+    text-align: left; /* Align title to the left */
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #ff9900;
+}
+
+
+@media (max-width: 768px) {
+    .sign-up-form {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 20px;
+        
+    }
+
+    .sign-up-form h2 {
+        font-size: 24px;
+    }
+
+    .signup img {
+        max-width: 100%; /* Ensure the image scales down */
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+}
+
+
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+.product-card {
+   
+    background-color: #fff;
+    padding: 20px;
+    flex-basis: calc(33.33% - 40px); /* 3 products per row on desktop */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 200px; /* Fixed height for the product images */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #ff9900;
+}
+
+
+@media (max-width: 1024px) {
+    .product-card {
+        flex-basis: calc(50% - 40px); /* 2 products per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex-basis: 100%; /* 1 product per row on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+   margin-bottom: 0rem;
+   margin-top: 4rem;
+
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-media a {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+footer .social-media a:hover {
+    color: #007bff;
+}
+
+
+
+.company-location iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .main-box {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
